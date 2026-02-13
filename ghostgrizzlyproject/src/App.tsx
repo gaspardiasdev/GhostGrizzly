@@ -10,6 +10,9 @@ import Services from "./components/Services";
 import PriceTable from "./components/TabelaPreco";
 import { motion } from "framer-motion";
 import ContactForm from "./components/Contact";
+import Team from "./components/Team";
+import Features from "./components/Features";
+import Ecosystem from "./components/Ecosystem";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -122,7 +125,10 @@ export default function App() {
 
       <main className="relative z-10 px-4">
         <Home />
+        <Features />
+        <Ecosystem />
         <Services />
+        <Team />
         <About />
         <PriceTable />
         <ContactForm />

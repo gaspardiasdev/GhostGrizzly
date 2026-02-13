@@ -3,16 +3,16 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const priceLevels = [
-  { level: 1, title: "Landing Page Básica", price: "70k – 150k AOA" },
-  { level: 2, title: "Landing Page Premium", price: "150k – 300k AOA" },
-  { level: 3, title: "Site Institucional Simples", price: "300k – 600k AOA" },
-  { level: 4, title: "Site Institucional Avançado", price: "600k – 1.2M AOA" },
-  { level: 5, title: "E‑commerce Básico", price: "1.2M – 2.5M AOA" },
-  { level: 6, title: "E‑commerce Personalizado", price: "2.5M – 5M AOA" },
-  { level: 7, title: "App Web Frontend", price: "5M – 8M AOA" },
-  { level: 8, title: "Aplicação Fullstack", price: "8M – 15M AOA" },
-  { level: 9, title: "Plataforma Complexa", price: "15M – 30M AOA" },
-  { level: 10, title: "Sistema Empresarial", price: "30M+ AOA" },
+  // Websites
+  { level: 1, title: "Landing Page", price: "80k – 150k AOA" },
+  { level: 2, title: "Site Institucional", price: "250k – 500k AOA" },
+  { level: 3, title: "E-commerce PME", price: "800k – 2M AOA" },
+  { level: 4, title: "Sistemas & Apps", price: "Sob Orçamento" },
+
+  // Social Media
+  { level: 5, title: "Social Media: Inicial", price: "150k AOA / mês" },
+  { level: 6, title: "Social Media: Crescimento", price: "250k AOA / mês" },
+  { level: 7, title: "Social Media: Empresarial", price: "Sob Orçamento" },
 ];
 
 export default function PriceTable() {
@@ -39,7 +39,7 @@ export default function PriceTable() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.9, delay: i * 0.1, ease: "easeOut" }}
             whileHover={{ rotateY: 15, rotateX: -8, translateZ: 40 }}
-            className="[transform-style:preserve-3d] bg-black/60 backdrop-blur-xl border border-cyan-500/20 rounded-3xl p-8 shadow-2xl hover:shadow-cyan-400/40 transition-all duration-500"
+            className="[transform-style:preserve-3d] bg-gradient-to-br from-white/5 to-transparent backdrop-blur-2xl border border-white/10 rounded-3xl p-8 shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500"
           >
             <h3 className="text-xl font-semibold text-cyan-200 mb-2">
               Nível {c.level} – {c.title}

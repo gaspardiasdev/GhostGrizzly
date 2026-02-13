@@ -18,6 +18,10 @@ const services = [
     title: "Suporte com Hospedagem",
     desc: "Configuração de domínio, cPanel, email profissional e publicação segura.",
   },
+  {
+    title: "Gestão de Redes Sociais",
+    desc: "Estratégias de crescimento, criação de conteúdo e gestão de comunidade para Instagram, Facebook e LinkedIn.",
+  },
 ];
 
 export default function Services() {
@@ -39,7 +43,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.8 }}
-            className="bg-black/50 backdrop-blur rounded-2xl border border-cyan-500/20 p-6 text-white hover:shadow-cyan-500/20 transition shadow-xl"
+            className="bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-2xl rounded-3xl border border-white/10 p-8 text-white hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] transition-all duration-500 group"
           >
             <h3 className="text-xl font-semibold mb-2 text-cyan-200 drop-shadow">
               {s.title}
